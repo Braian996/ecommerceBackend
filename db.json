@@ -1,0 +1,83 @@
+{
+    "categoria": [
+        {
+            "id": "1",
+            "nombre": "Televisores"
+        },
+        {
+            "id": "2",
+            "nombre": "Cafeteras"
+        },
+        {
+            "id": "3",
+            "nombre": "Lavarropas"
+        },
+        {
+            "id": "4",
+            "nombre": "Microondas"
+        }
+    ],
+    "productos": [
+        {
+            "id": "1",
+            "nombre": "LG",
+            "categoriaId": "1"
+        },
+        {
+            "id": "1",
+            "nombre": "Samsung",
+            "categoriaId": "2"
+        },
+        {
+            "id": "3",
+            "nombre": "Nespresso",
+            "categoriaId": "2"
+        },
+        {
+            "id": "aca25fa",
+            "nombre": "Sony",
+            "categoriaId": "1"
+        },
+        {
+            "id": "6",
+            "nombre": "Vaio",
+            "categoriaId": "1"
+        }
+    ],
+    "clientes": [
+        {
+            "id": "1",
+            "nombre": "Juan"
+        },
+        {
+            "id": "2",
+            "nombre": "Jose"
+        },
+        {
+            "id": "eae91f28-9f1d-7f3a-037b-543165f59928",
+            "nombre": "Braian"
+        }
+    ],
+    "cliente_producto": [
+        {
+            "id": "1",
+            "clienteId": "1",
+            "productoId": "2"
+        },
+        {
+            "id": "1",
+            "clienteId": "2",
+            "productoId": "1"
+        },
+        {
+            "id": "3",
+            "clienteId": "2",
+            "productoId": "3"
+        },
+        {
+            "id": "12da2",
+            "clienteId": "eae91f28-9f1d-7f3a-037b-543165f59928",
+            "productoId": "aca25fa"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "categoria": [
+        {
+            "id": "1",
+            "nombre": "Televisores"
+        },
+        {
+            "id": "2",
+            "nombre": "Cafeteras"
+        },
+        {
+            "id": "3",
+            "nombre": "TeLavarropas"
+        },
+        {
+            "id": "4",
+            "nombre": "Microondas"
+        }
+    ],
+    "productos": [
+        {
+            "id": "1",
+            "nombre": "LG",
+            "categoriaId": "1"
+        },
+        {
+            "id": "1",
+            "nombre": "Samsung",
+            "categoriaId": "2"
+        },
+        {
+            "id": "3",
+            "nombre": "Nespresso",
+            "categoriaId": "2"
+        },
+        {
+            "id": "d8d2c3d6-66ff-bd51-c486-b51fd8d86032",
+            "nombre": "philco te quema"
+        },
+        {
+            "id": "5fc03e4c-ec8a-be13-b3ed-713305a4217a",
+            "nombre": "tele pantalla super"
+        }
+    ],
+    "clientes": [
+        {
+            "id": "1",
+            "nombre": "Juan"
+        },
+        {
+            "id": "2",
+            "nombre": "Jose"
+        },
+        {
+            "id": "3",
+            "nombre": "Coco"
+        },
+        {
+            "id": "eae91f28-9f1d-7f3a-037b-543165f59928",
+            "nombre": "Braian"
+        },
+        {
+            "id": "f52e5dd1-fe29-7091-24fc-1d993bdf92e3",
+            "nombre": "carlos"
+        },
+        {
+            "id": "bfed61d6-ae5c-2f7c-5d32-98aead2f416c",
+            "nombre": "jeronimo"
+        }
+    ],
+    "cliente_producto": [
+        {
+            "id": "1",
+            "clienteId": "1",
+            "productoId": "2"
+        },
+        {
+            "id": "1",
+            "clienteId": "2",
+            "productoId": "1"
+        },
+        {
+            "id": "3",
+            "clienteId": "2",
+            "productoId": "3"
+        }
+    ]
+}

@@ -10,7 +10,7 @@
         },
         {
             "id": "3",
-            "nombre": "TeLavarropas"
+            "nombre": "Lavarropas"
         },
         {
             "id": "4",
@@ -21,25 +21,32 @@
         {
             "id": "1",
             "nombre": "LG",
-            "categoriaId": "1"
+            "categoriaId": "1",
+            "stock": 100
         },
         {
             "id": "1",
             "nombre": "Samsung",
-            "categoriaId": "2"
+            "categoriaId": "2",
+            "stock": 100
         },
         {
             "id": "3",
             "nombre": "Nespresso",
-            "categoriaId": "2"
+            "categoriaId": "2",
+            "stock": 100
         },
         {
-            "id": "d8d2c3d6-66ff-bd51-c486-b51fd8d86032",
-            "nombre": "philco te quema"
+            "id": "aca25fa",
+            "nombre": "Sony",
+            "categoriaId": "1",
+            "stock": 100
         },
         {
-            "id": "5fc03e4c-ec8a-be13-b3ed-713305a4217a",
-            "nombre": "tele pantalla super"
+            "id": "6",
+            "nombre": "Vaio",
+            "categoriaId": "1",
+            "stock": 100
         }
     ],
     "clientes": [
@@ -52,37 +59,38 @@
             "nombre": "Jose"
         },
         {
-            "id": "3",
-            "nombre": "Coco"
-        },
-        {
             "id": "eae91f28-9f1d-7f3a-037b-543165f59928",
             "nombre": "Braian"
-        },
-        {
-            "id": "f52e5dd1-fe29-7091-24fc-1d993bdf92e3",
-            "nombre": "carlos"
-        },
-        {
-            "id": "bfed61d6-ae5c-2f7c-5d32-98aead2f416c",
-            "nombre": "jeronimo"
         }
     ],
     "cliente_producto": [
         {
             "id": "1",
             "clienteId": "1",
-            "productoId": "2"
+            "productoId": "2",
+            "stock": 23,
+            "fecha": ""
         },
         {
             "id": "1",
             "clienteId": "2",
-            "productoId": "1"
+            "productoId": "1",
+            "stock": 20,
+            "fecha": ""
         },
         {
             "id": "3",
             "clienteId": "2",
-            "productoId": "3"
+            "productoId": "3",
+            "stock": 10,
+            "fecha": ""
+        },
+        {
+            "id": "12da2",
+            "clienteId": "eae91f28-9f1d-7f3a-037b-543165f59928",
+            "productoId": "aca25fa",
+            "stock": 10,
+            "fecha": ""
         }
     ]
 }

@@ -21,27 +21,32 @@
         {
             "id": "1",
             "nombre": "LG",
-            "categoriaId": "1"
+            "categoriaId": "1",
+            "stock": 100
         },
         {
             "id": "1",
             "nombre": "Samsung",
-            "categoriaId": "2"
+            "categoriaId": "2",
+            "stock": 100
         },
         {
             "id": "3",
             "nombre": "Nespresso",
-            "categoriaId": "2"
+            "categoriaId": "2",
+            "stock": 100
         },
         {
             "id": "aca25fa",
             "nombre": "Sony",
-            "categoriaId": "1"
+            "categoriaId": "1",
+            "stock": 100
         },
         {
             "id": "6",
             "nombre": "Vaio",
-            "categoriaId": "1"
+            "categoriaId": "1",
+            "stock": 100
         }
     ],
     "clientes": [
@@ -62,22 +67,30 @@
         {
             "id": "1",
             "clienteId": "1",
-            "productoId": "2"
+            "productoId": "2",
+            "stock": 23,
+            "fecha": ""
         },
         {
             "id": "1",
             "clienteId": "2",
-            "productoId": "1"
+            "productoId": "1",
+            "stock": 20,
+            "fecha": ""
         },
         {
             "id": "3",
             "clienteId": "2",
-            "productoId": "3"
+            "productoId": "3",
+            "stock": 10,
+            "fecha": ""
         },
         {
             "id": "12da2",
             "clienteId": "eae91f28-9f1d-7f3a-037b-543165f59928",
-            "productoId": "aca25fa"
+            "productoId": "aca25fa",
+            "stock": 10,
+            "fecha": ""
         }
     ]
 }

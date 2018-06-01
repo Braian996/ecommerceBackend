@@ -72,8 +72,12 @@
             "nombre": "Braian"
         },
         {
-            "id": "f0c52646-5558-c16e-620b-83fe149f63b3",
+            "id": "457b5772-e6fa-386d-b7df-d79bd9c937df",
             "nombre": "juan pepe"
+        },
+        {
+            "id": "9ab99ebb-0a6c-8207-01c8-3f449889fb69",
+            "nombre": "pepe"
         }
     ],
     "cliente_producto": [

@@ -172,6 +172,33 @@ app.get("/cliente_producto", (req, res) => {
     })
 });
 
+app.get("/getClientByName/:name", (req, res) => {
+
+    fs.readFile("db.json", (error, data) => {
+        let dataRecovery = JSON.parse(data)
+        let nameLowerCase = req.params.name.toLowerCase();
+        let clients = dataRecovery.clientes.filter(client => client.nombre.toLowerCase().includes(nameLowerCase))
+        res.send(clients)
+    })
+
+});
+
+
+app.get("/getProductos", (req, res) => {
+
+
+
+    fs.readFile("db.json", (error, data) => {
+
+        let prod = req.query.nombre.toLowerCase();;
+        let cat = req.query.categoria;
+        let datosRecuperados = JSON.parse(data);
+        let productos = datosRecuperados.productos.filter(producto =>
+            (prod ? producto.nombre.toLowerCase().includes(prod) : true) && (cat ? producto.categoriaId == cat : true));
+        res.send(productos)
+    })
+});
+
 // POST
 app.post('/categorias', (req, res) => {
     fs.readFile('data.json', (error, data) => {

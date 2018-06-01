@@ -15,6 +15,10 @@
         {
             "id": "4",
             "nombre": "Microondas"
+        },
+        {
+            "id": "394e6ee7-b38e-7411-c598-aa107087b0fa",
+            "nombre": "hola"
         }
     ],
     "productos": [
@@ -61,6 +65,10 @@
         {
             "id": "eae91f28-9f1d-7f3a-037b-543165f59928",
             "nombre": "Braian"
+        },
+        {
+            "id": "f0c52646-5558-c16e-620b-83fe149f63b3",
+            "nombre": "juan pepe"
         }
     ],
     "cliente_producto": [

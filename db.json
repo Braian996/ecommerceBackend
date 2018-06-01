@@ -46,7 +46,7 @@
             "id": "6",
             "nombre": "Vaio",
             "categoriaId": "1",
-            "stock": 100
+            "stock": 80
         }
     ],
     "clientes": [
@@ -91,6 +91,13 @@
             "productoId": "aca25fa",
             "stock": 10,
             "fecha": ""
+        },
+        {
+            "id": "e527bd96-34a6-7703-91a0-480c47f4672b",
+            "clienteId": "3",
+            "productoId": "6",
+            "stock": 20,
+            "fecha": "31/05/2018"
         }
     ]
 }

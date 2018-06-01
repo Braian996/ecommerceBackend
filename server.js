@@ -45,6 +45,28 @@ const deleteElement = (dataRetrieved, id) => {
     return newData;
 };
 
+const formattedDate = (d = new Date) => {
+    let month = String(d.getMonth() + 1);
+    let day = String(d.getDate());
+    const year = String(d.getFullYear());
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return `${day}/${month}/${year}`;
+};
+
+const menosStock = (datas, cant, productId) => {
+    let newData = datas.map(data => {
+        if (data.id === productId) {
+            data.stock = data.stock - cant;
+        }
+        return data;
+    });
+
+    return newData;
+};
+
 ///////////////////////////////////////////////////////
 // obtengo la lista de clientes
 // http://localhost:4000/clientes
@@ -203,13 +225,14 @@ app.post('/productos', (req, res) => {
         let id = guid();
         let nombre = req.body.nombre;
         let categoriaId = req.body.categoriaId;
+        let stock = req.body.stock;
 
 
         let categoria = JSON.parse(data).categoria;
         let productos = JSON.parse(data).productos;
         let clientes = JSON.parse(data).clientes;
         let cliente_producto = JSON.parse(data).cliente_producto;
-        let dataProduct = {id: id, nombre: nombre, categoriaId: categoriaId};
+        let dataProduct = {id: id, nombre: nombre, categoriaId: categoriaId, stock: stock};
 
         let newData = {
             categoria: [...categoria],
@@ -220,6 +243,47 @@ app.post('/productos', (req, res) => {
 
         fs.writeFile('data.json', JSON.stringify(newData, null, 4))
         res.send(id);
+    })
+});
+
+app.post('/cliente_producto', (req, res) => {
+    fs.readFile('data.json', (error, data) => {
+
+        let cantSolicitada = parseInt(req.body.stock);
+        let id = guid();
+        let clienteId = req.body.clienteId;
+        let productoId = req.body.productoId;
+        let fecha = formattedDate();
+        let toF = true;
+        const product = JSON.parse(data).productos.filter(pro => pro.id === productoId);
+
+        if (product.length === 0){
+            res.send(null)
+        }
+        if ((product[0].stock === 0 || product[0].stock < cantSolicitada)) {
+            res.send('No hay stock suficiente');
+        } else {
+            let categoria = JSON.parse(data).categoria;
+            let productos = JSON.parse(data).productos;
+            let clientes = JSON.parse(data).clientes;
+            let cliente_producto = JSON.parse(data).cliente_producto;
+            let productoMenosStock = menosStock(productos, cantSolicitada, productoId);
+            let dataBuy = {id: id, clienteId: clienteId, productoId: productoId, stock: cantSolicitada, fecha: fecha};
+
+            let newCliente = {
+                categoria: [...categoria],
+                productos: productoMenosStock,
+                clientes: [...clientes],
+                cliente_producto: [...cliente_producto, dataBuy]
+            };
+
+            fs.writeFile('data.json', JSON.stringify(newCliente, null, 4))
+            res.send(id);
+        }
+
+
+
+
     })
 });
 

@@ -225,7 +225,7 @@ app.post('/productos', (req, res) => {
         let id = guid();
         let nombre = req.body.nombre;
         let categoriaId = req.body.categoriaId;
-        let stock = req.body.stock;
+        let stock = parseInt(req.body.stock);
 
 
         let categoria = JSON.parse(data).categoria;

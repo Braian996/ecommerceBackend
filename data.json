@@ -51,6 +51,11 @@
             "nombre": "Vaio",
             "categoriaId": "1",
             "stock": 100
+        },
+        {
+            "id": "8ea27079-36fd-30f9-d232-a04c021a5d73",
+            "nombre": "Producto1",
+            "stock": 7
         }
     ],
     "clientes": [

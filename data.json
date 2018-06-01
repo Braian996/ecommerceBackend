@@ -19,6 +19,10 @@
         {
             "id": "394e6ee7-b38e-7411-c598-aa107087b0fa",
             "nombre": "hola"
+        },
+        {
+            "id": "d01cd62c-73ba-5c29-1a7b-3f3c6f737b65",
+            "nombre": "Heladeras"
         }
     ],
     "productos": [
@@ -55,7 +59,12 @@
         {
             "id": "8ea27079-36fd-30f9-d232-a04c021a5d73",
             "nombre": "Producto1",
-            "stock": 7
+            "stock": null
+        },
+        {
+            "id": "556be930-f7ac-53a2-c830-3dc806b58d46",
+            "nombre": "tele",
+            "stock": 76
         }
     ],
     "clientes": [
@@ -108,6 +117,13 @@
             "productoId": "aca25fa",
             "stock": 10,
             "fecha": ""
+        },
+        {
+            "id": "d897eeb5-8165-a8b8-8d30-1d804f624851",
+            "clienteId": "9ab99ebb-0a6c-8207-01c8-3f449889fb69",
+            "productoId": "8ea27079-36fd-30f9-d232-a04c021a5d73",
+            "stock": null,
+            "fecha": "31/05/2018"
         }
     ]
 }

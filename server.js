@@ -174,7 +174,7 @@ app.get("/cliente_producto", (req, res) => {
 
 app.get("/getClientByName/:name", (req, res) => {
 
-    fs.readFile("db.json", (error, data) => {
+    fs.readFile("data.json", (error, data) => {
         let dataRecovery = JSON.parse(data)
         let nameLowerCase = req.params.name.toLowerCase();
         let clients = dataRecovery.clientes.filter(client => client.nombre.toLowerCase().includes(nameLowerCase))
@@ -188,7 +188,7 @@ app.get("/getProductos", (req, res) => {
 
 
 
-    fs.readFile("db.json", (error, data) => {
+    fs.readFile("data.json", (error, data) => {
 
         let prod = req.query.nombre.toLowerCase();;
         let cat = req.query.categoria;
